@@ -120,5 +120,129 @@ db.createCollection("usuarios", {
   }
 })
 
+//coleccion sedes
+db.createCollection("sedes", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["ciudad", "direccion", "capacidad"],
+      properties: {
+        _id: { bsonType: "objectId" },
+        ciudad: { bsonType: "string" },
+        direccion: { bsonType: "string" },
+        capacidad: { bsonType: "int", minimum: 1 }
+      }
+    }
+  }
+})
+
+// indices
+db.sedes.createIndex({ ciudad: 1 })
+
+//coleccion cursos
+
+db.createCollection("cursos", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["sedeId", "profesorId", "instrumento", "nivel", "semanas_duracion", "programa", "precio", "capacidad", "cupos_disponibles"],
+      properties: {
+        _id: { bsonType: "objectId" },
+        sedeId: { bsonType: "objectId" },
+        profesorId: { bsonType: "objectId" },
+        instrumento: { bsonType: "string", description: "Instrumento del curso" },
+        nivel: { enum: ["principiante", "intermedio", "avanzado"] },
+        semanas_duracion: { bsonType: "int", minimum: 1 },
+        programa: {
+          bsonType: "object",
+          required: ["dia_semana", "hora_inicio", "hora_fin"],
+          properties: {
+            dia_semana: { enum: ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"] },
+            hora_inicio: { bsonType: "string", pattern: "^[0-2][0-9]:[0-5][0-9]$" },
+            hora_fin: { bsonType: "string", pattern: "^[0-2][0-9]:[0-5][0-9]$" }
+          }
+        },
+        precio: { bsonType: "int", minimum: 0 },
+        capacidad: { bsonType: "int", minimum: 1 },
+        cupos_disponibles: { bsonType: "int", minimum: 0 }
+      }
+    }
+  }
+})
+
+// indices
+db.cursos.createIndex({ instrumento: 1 })
+db.cursos.createIndex({ sedeId: 1, profesorId: 1 })
+
+//coleccion inscripciones
+
+db.createCollection("inscripciones", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["estudianteId", "cursoId", "sedeId", "profesorId", "estado"],
+      properties: {
+        _id: { bsonType: "objectId" },
+        estudianteId: { bsonType: "objectId" },
+        cursoId: { bsonType: "objectId" },
+        sedeId: { bsonType: "objectId" },
+        profesorId: { bsonType: "objectId" },
+        estado: { enum: ["activo", "cancelado", "completado"] }
+      }
+    }
+  }
+})
+
+// indices 
+db.inscripciones.createIndex({ estudianteId: 1, cursoId: 1 }, { unique: true })
+db.inscripciones.createIndex({ estado: 1 })
+
+//coleccion instrumentos
+
+db.createCollection("instrumentos", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["sedeId", "tipo_instrumento", "total", "disponibles"],
+      properties: {
+        _id: { bsonType: "objectId" },
+        sedeId: { bsonType: "objectId" },
+        tipo_instrumento: { bsonType: "string" },
+        total: { bsonType: "int", minimum: 1 },
+        disponibles: { bsonType: "int", minimum: 0 }
+      }
+    }
+  }
+})
+
+// indices 
+db.instrumentos.createIndex({ sedeId: 1, tipo_instrumento: 1 }, { unique: true })
+
+// coleccion reservas_instrumentos
+
+db.createCollection("reservas_instrumentos", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["sedeId", "tipo_instrumento", "estudianteId", "inicio_reserva", "fin_reserva", "estado"],
+      properties: {
+        _id: { bsonType: "objectId" },
+        sedeId: { bsonType: "objectId" },
+        tipo_instrumento: { bsonType: "string" },
+        estudianteId: { bsonType: "objectId" },
+        inicio_reserva: { bsonType: "date" },
+        fin_reserva: { bsonType: "date" },
+        estado: { enum: ["reservado", "cancelado", "finalizado"] }
+      }
+    }
+  }
+})
+
+// indices
+db.reservas_instrumentos.createIndex({ sedeId: 1, tipo_instrumento: 1 })
+db.reservas_instrumentos.createIndex({ estudianteId: 1, inicio_reserva: 1 })
+
+
+
 
 
