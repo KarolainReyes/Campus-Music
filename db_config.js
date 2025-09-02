@@ -201,22 +201,57 @@ db.inscripciones.createIndex({ estado: 1 })
 
 db.createCollection("instrumentos", {
   validator: {
-    $jsonSchema: {
-      bsonType: "object",
-      required: ["sedeId", "tipo_instrumento", "total", "disponibles"],
-      properties: {
-        _id: { bsonType: "objectId" },
-        sedeId: { bsonType: "objectId" },
-        tipo_instrumento: { bsonType: "string" },
-        total: { bsonType: "int", minimum: 1 },
-        disponibles: { bsonType: "int", minimum: 0 }
+    $and: [
+      {
+        $jsonSchema: {
+          bsonType: "object",
+          required: ["sedeId", "tipo_instrumento", "total", "disponibles"],
+          properties: {
+            sedeId: {
+              bsonType: "objectId",
+              description: "Debe ser un ObjectId válido que referencia una sede"
+            },
+            tipo_instrumento: {
+              bsonType: "string",
+              enum: [
+                "piano",
+                "guitarra",
+                "violin",
+                "bateria",
+                "saxofon",
+                "trompeta",
+                "microfono",
+                "flauta",
+                "teclado"
+              ],
+              description: "El instrumento debe ser uno de los tipos definidos"
+            },
+            total: {
+              bsonType: "int",
+              minimum: 0,
+              description: "Número total de instrumentos en la sede"
+            },
+            disponibles: {
+              bsonType: "int",
+              minimum: 0,
+              description: "Número de instrumentos disponibles para préstamo"
+            }
+          }
+        }
+      },
+      {
+        $expr: { $lte: ["$disponibles", "$total"] } 
       }
-    }
+    ]
   }
-})
+});
 
 // indices 
-db.instrumentos.createIndex({ sedeId: 1, tipo_instrumento: 1 }, { unique: true })
+db.instrumentos.createIndex(
+  { sedeId: 1, tipo_instrumento: 1 },
+  { unique: true, name: "idx_sede_instrumento_unique" }
+);
+
 
 // coleccion reservas_instrumentos
 
