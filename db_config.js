@@ -34,8 +34,8 @@ db.createCollection("estudiantes", {
 })
 
 // Índices
-db.students.createIndex({ document: 1 }, { unique: true })
-db.students.createIndex({ fullName: 1 })
+db.students.createIndex({ documento: 1 }, { unique: true })
+db.students.createIndex({ nombre_completo: 1 })
 
 
 //Coleccion profesores
@@ -76,8 +76,8 @@ db.createCollection("profesores", {
 })
 
 // Índices
-db.teachers.createIndex({ document: 1 }, { unique: true })
-db.teachers.createIndex({ specialty: 1 })
+db.teachers.createIndex({ documento: 1 }, { unique: true })
+db.teachers.createIndex({ especialidad: 1 })
 
 
 //Coleccion usuarios
