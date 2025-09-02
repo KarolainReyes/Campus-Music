@@ -64,7 +64,7 @@
   "disponibles": 8                   
 },
 
-//reservas instrumentos
+// colecion reservas instrumentos
 
 {
   "sedeId": ObjectId("..."),
@@ -74,6 +74,17 @@
   "fin_reserva": ISODate("2025-09-05T16:00:00-05:00"),
   "estado": "reservado"              // [reservado|cancelado|finalizado]
 },
+
+// coleccion usuarios (profesores, estudiantes, admin)
+
+{
+
+  "username": "ana.gomez",
+  "passwordHash": "...",
+  "roles": ["estudiante"],      //estudiante, profesor o admin
+  "perfilId": ObjectId("..."), // referencia al perfil
+
+}
 
 
 ]
