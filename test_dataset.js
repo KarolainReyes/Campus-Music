@@ -33,10 +33,10 @@ db.cursos.insertMany([
   //SEDE BOGOTÁ
 
   {
-    nombre_curso: 'Piano Básico',
+    nombre_curso: 'Introducción a Violín',
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"), 
-    profesorId: ObjectId("68b82480e306a5d40bba92e3"),
-    instrumento: "piano",
+    profesorId: ObjectId("68b82480e306a5d40bba92e3"),//juan marinio
+    instrumento: "Violín",
     nivel: "principiante",
     semanas_duracion: 12,
     programa: {
@@ -51,8 +51,8 @@ db.cursos.insertMany([
   {
     nombre_curso: 'Guitarra Intermedia',
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e3"),
-    instrumento: "guitarra",
+    profesorId: ObjectId("68b82480e306a5d40bba92e3"),//juan marinio
+    instrumento: "Guitarra",
     nivel: "intermedio",
     semanas_duracion: 16,
     programa: {
@@ -65,10 +65,10 @@ db.cursos.insertMany([
     cupos_disponibles: 15
   },
   {
-    nombre_curso: 'Violín Avanzado',
+    nombre_curso: 'Piano Avanzado',
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e4"),
-    instrumento: "violín",
+    profesorId: ObjectId("68b82480e306a5d40bba92e4"),//laura castan
+    instrumento: "Piano",
     nivel: "avanzado",
     semanas_duracion: 20,
     programa: {
@@ -81,10 +81,10 @@ db.cursos.insertMany([
     cupos_disponibles: 10
   },
   {
-    nombre_curso: 'Canto',
+    nombre_curso: 'Flauta Principiante',
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e4"),
-    instrumento: "canto",
+    profesorId: ObjectId("68b82480e306a5d40bba92e4"),//laura castan
+    instrumento: "Flauta",
     nivel: "principiante",
     semanas_duracion: 10,
     programa: {
@@ -97,10 +97,10 @@ db.cursos.insertMany([
     cupos_disponibles: 20
   },
   {
-    nombre_curso: 'Bateria intermedio',
+    nombre_curso: 'Clarinete intermedio',
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b82480e306a5d40bba92e5"),
-    instrumento: "batería",
+    profesorId: ObjectId("68b82480e306a5d40bba92e5"),//carlos herre
+    instrumento: "Carinete",
     nivel: "intermedio",
     semanas_duracion: 14,
     programa: {
@@ -116,10 +116,10 @@ db.cursos.insertMany([
   //SEDE CALI 
 
   {
-    nombre_curso: 'Bateria principiante',
+    nombre_curso: 'Trombón principiante',
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"), 
-    profesorId: ObjectId("68b82480e306a5d40bba92e6"),
-    instrumento: "bateria",
+    profesorId: ObjectId("68b82480e306a5d40bba92e6"),//mariana lope
+    instrumento: "Trombón",
     nivel: "principiante",
     semanas_duracion: 12,
     programa: {
@@ -132,10 +132,10 @@ db.cursos.insertMany([
     cupos_disponibles: 10
   },
   {
-    nombre_curso: 'Saxofon Intermedio',
+    nombre_curso: 'Trompeta Intermedio',
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e7"),
-    instrumento: "Saxofon",
+    profesorId: ObjectId("68b82480e306a5d40bba92e7"),//santiago per
+    instrumento: "Trompeta",
     nivel: "intermedio",
     semanas_duracion: 16,
     programa: {
@@ -148,10 +148,10 @@ db.cursos.insertMany([
     cupos_disponibles: 15
   },
   {
-    nombre_curso: 'Violín Avanzado',
+    nombre_curso: 'Saxofón Avanzado',
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e7"),
-    instrumento: "violín",
+    profesorId: ObjectId("68b82480e306a5d40bba92e7"),//santiago per
+    instrumento: "Saxofón",
     nivel: "avanzado",
     semanas_duracion: 20,
     programa: {
@@ -164,10 +164,10 @@ db.cursos.insertMany([
     cupos_disponibles: 10
   },
   {
-    nombre_curso: 'Canto',
+    nombre_curso: 'Batería Principiante',
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e8"),
-    instrumento: "canto",
+    profesorId: ObjectId("68b82480e306a5d40bba92e8"),//camila dua
+    instrumento: "Batería",
     nivel: "principiante",
     semanas_duracion: 10,
     programa: {
@@ -180,10 +180,10 @@ db.cursos.insertMany([
     cupos_disponibles: 20
   },
   {
-    nombre_curso: 'Bateria intermedio',
+    nombre_curso: 'Xilófono intermedio',
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    profesorId: ObjectId("68b82480e306a5d40bba92e8"),
-    instrumento: "batería",
+    profesorId: ObjectId("68b82480e306a5d40bba92e8"),//camila duar
+    instrumento: "Xilófono",
     nivel: "intermedio",
     semanas_duracion: 14,
     programa: {
@@ -199,10 +199,10 @@ db.cursos.insertMany([
   //SEDE MEDELLIN
 
   {
-    nombre_curso: 'Bateria principiante',
+    nombre_curso: 'Contrabajo principiante',
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"), 
-    profesorId: ObjectId("68b82480e306a5d40bba92e9"),
-    instrumento: "bateria",
+    profesorId: ObjectId("68b82480e306a5d40bba92e9"),//andres molin
+    instrumento: "Contrabajo",
     nivel: "principiante",
     semanas_duracion: 12,
     programa: {
@@ -215,10 +215,10 @@ db.cursos.insertMany([
     cupos_disponibles: 10
   },
   {
-    nombre_curso: 'Piano Intermedio',
+    nombre_curso: 'Arpa Intermedio',
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92ea"),
-    instrumento: "Piano",
+    profesorId: ObjectId("68b82480e306a5d40bba92ea"),//valen gomez
+    instrumento: "Arpa",
     nivel: "intermedio",
     semanas_duracion: 16,
     programa: {
@@ -231,10 +231,10 @@ db.cursos.insertMany([
     cupos_disponibles: 15
   },
   {
-    nombre_curso: 'Trompeta Avanzado',
+    nombre_curso: 'Órgano Avanzado',
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92eb"),
-    instrumento: "Trompeta",
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),//ricardo torr
+    instrumento: "Órgano",
     nivel: "avanzado",
     semanas_duracion: 20,
     programa: {
@@ -247,9 +247,9 @@ db.cursos.insertMany([
     cupos_disponibles: 10
   },
   {
-    nombre_curso: 'Canto',
+    nombre_curso: 'Oboe Principiante',
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92ec"),
+    profesorId: ObjectId("68b82480e306a5d40bba92ec"),//diana moral
     instrumento: "microfono",
     nivel: "principiante",
     semanas_duracion: 10,
@@ -263,9 +263,9 @@ db.cursos.insertMany([
     cupos_disponibles: 20
   },
   {
-    nombre_curso: 'Guitarra intermedio',
+    nombre_curso: 'Bajo Eléctrico',
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b82480e306a5d40bba92ec"),
+    profesorId: ObjectId("68b82480e306a5d40bba92ec"),//diana moral
     instrumento: "guitarra",
     nivel: "intermedio",
     semanas_duracion: 14,
@@ -289,71 +289,81 @@ db.profesores.insertMany([
     _id: ObjectId('68b82480e306a5d40bba92e3'),
     documento: "10010001",
     nombre_completo: "Juan Marinio",
-    especialidad: ["piano", "teoria"],
-    anios_experiencia: 8
+    especialidad: ["Violín", "Guitarra"],
+    anios_experiencia: 8,
+    sedeId: ObjectId('68b8241ae306a5d40bba92e0')//bogota
   },
   {
     _id: ObjectId('68b82480e306a5d40bba92e4'),
     documento: "10010002",
     nombre_completo: "Laura Castanio",
-    especialidad: ["violin", "canto"],
-    anios_experiencia: 5
+    especialidad: ["Piano", "Flauta"],
+    anios_experiencia: 5,
+    sedeId: ObjectId('68b8241ae306a5d40bba92e0')//bogota
   },
   {
     _id: ObjectId('68b82480e306a5d40bba92e5'),
     documento: "10010003",
     nombre_completo: "Carlos Herrera",
-    especialidad: ["guitarra clasica", "armonia"],
-    anios_experiencia: 10
+    especialidad: ["Clarinete"],
+    anios_experiencia: 10,
+    sedeId: ObjectId('68b8241ae306a5d40bba92e0')//bogota
   },
   {
     _id: ObjectId('68b82480e306a5d40bba92e6'),
     documento: "10010004",
     nombre_completo: "Mariana Lopez",
-    especialidad: ["bateria", "percusion latina"],
-    anios_experiencia: 6
+    especialidad: ["Trombón", "percusion latina"],
+    anios_experiencia: 6,
+    sedeId: ObjectId('68b8241ae306a5d40bba92e1')//cali
   },
   {
     _id: ObjectId('68b82480e306a5d40bba92e7'),
     documento: "10010005",
     nombre_completo: "Santiago Perez",
-    especialidad: ["saxofon", "teoria"],
-    anios_experiencia: 12
+    especialidad: ["Saxofón", "Teoria", "Trompeta"],
+    anios_experiencia: 12,
+    sedeId: ObjectId('68b8241ae306a5d40bba92e1')//cali
   },
   {
     _id: ObjectId('68b82480e306a5d40bba92e8'),
     documento: "10010006",
     nombre_completo: "Camila Duarte",
     especialidad: ["canto lirico", "teoria"],
-    anios_experiencia: 7
+    anios_experiencia: 7,
+    sedeId: ObjectId('68b8241ae306a5d40bba92e1')//cali
   },
   {
     _id: ObjectId('68b82480e306a5d40bba92e9'),
     documento: "10010007",
     nombre_completo: "Andres Molina",
     especialidad: ["contrabajo", "armonia"],
-    anios_experiencia: 15
+    anios_experiencia: 15,
+    sedeId: ObjectId('68b8241ae306a5d40bba92e2')//medellin
   },
   {
     _id: ObjectId('68b82480e306a5d40bba92ea'),
     documento: "10010008",
     nombre_completo: "Valentina Gomez",
     especialidad: ["flauta traversa", "piano"],
-    anios_experiencia: 9
+    anios_experiencia: 9,
+    sedeId: ObjectId('68b8241ae306a5d40bba92e2')//medellin
   },
   {
     _id: ObjectId('68b82480e306a5d40bba92eb'),
     documento: "10010009",
     nombre_completo: "Ricardo Torres",
     especialidad: ["trompeta", "composicion"],
-    anios_experiencia: 11
+    anios_experiencia: 11,
+    sedeId: ObjectId('68b8241ae306a5d40bba92e2')//medellin
   },
   {
     _id: ObjectId('68b82480e306a5d40bba92ec'),
     documento: "10010010",
     nombre_completo: "Diana Morales",
-    especialidad: ["guitarra electrica", "produccion musical"],
-    anios_experiencia: 6
+    especialidad: ["Oboe", "Bajo eléctrico"],
+    anios_experiencia: 6,
+    sedeId: ObjectId('68b8241ae306a5d40bba92e2')//medellin
   },
   
 ]);
@@ -473,121 +483,121 @@ db.estudiantes.insertMany([
 db.instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"), 
-    tipo_instrumento: "piano",
+    tipo_instrumento: "Violín",
     total: 8,
     disponibles: 8
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"), 
-    tipo_instrumento: "saxofon",
+    tipo_instrumento: "Guitarra",
     total: 5,
     disponibles: 5
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    tipo_instrumento: "guitarra",
+    tipo_instrumento: "Piano",
     total: 10,
     disponibles: 10
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    tipo_instrumento: "bateria",
+    tipo_instrumento: "Flauta",
     total: 6,
     disponibles: 6
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    tipo_instrumento: "violin",
+    tipo_instrumento: "Clarinete",
     total: 7,
     disponibles: 7
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    tipo_instrumento: "microfono",
+    tipo_instrumento: "Trombón",
     total: 5,
     disponibles: 5
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    tipo_instrumento: "bateria",
+    tipo_instrumento: "Trompeta",
     total: 4,
     disponibles: 4
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    tipo_instrumento: "microfono",
+    tipo_instrumento: "Saxofón",
     total: 3,
     disponibles: 3
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    tipo_instrumento: "saxofon",
+    tipo_instrumento: "Batería",
     total: 6,
     disponibles: 6
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    tipo_instrumento: "violin",
+    tipo_instrumento: "Xilófono",
     total: 5,
     disponibles: 5
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    tipo_instrumento: "trompeta",
+    tipo_instrumento: "Contrabajo",
     total: 4,
     disponibles: 4
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    tipo_instrumento: "guitarra",
+    tipo_instrumento: "Arpa",
     total: 3,
     disponibles: 3
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    tipo_instrumento: "microfono",
+    tipo_instrumento: "Órgano",
     total: 6,
     disponibles: 6
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    tipo_instrumento: "bateria",
+    tipo_instrumento: "Oboe",
     total: 4,
     disponibles: 4
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    tipo_instrumento: "flauta",
+    tipo_instrumento: "Fagot",
     total: 5,
     disponibles: 5
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    tipo_instrumento: "guitarra",
+    tipo_instrumento: "Bajo eléctrico",
     total: 3,
     disponibles: 3
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    tipo_instrumento: "tambor",
+    tipo_instrumento: "Teclado",
     total: 4,
     disponibles: 4
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    tipo_instrumento: "teclado",
+    tipo_instrumento: "Caja",
     total: 3,
     disponibles: 3
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    tipo_instrumento: "violin",
+    tipo_instrumento: "Congas",
     total: 4,
     disponibles: 4
   },
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    tipo_instrumento: "saxofon",
+    tipo_instrumento: "Ukelele",
     total: 3,
     disponibles: 3
   }
