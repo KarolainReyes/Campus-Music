@@ -23,18 +23,43 @@ db.inscripciones.aggregate([
         localField: 'curso',
         foreignField: '_id',
         as: 'Curso' 
+    }},
+    {$lookup:{
+        from: 'sedes',
+        localField: '_id',
+        foreignField: '_id',
+        as: 'Sede' 
     }}
-
 ])
 
 //¿Cuál es el ingreso total generado por inscripciones en cada sede?
 
+db.inscripciones.aggregate([{$group: {_id: '$sedeId', total: {$sum:"$costo"}}},
+    {$lookup:{from:"sedes",localField:"_id",foreignField:"_id",as:"Sede"}},
+    {$project:{_id:0,"Sede.nombre_sede":1,total:1}}
+    
+])
+
 //¿Qué profesor tiene más estudiantes asignados?
+
+
 
 //¿Qué instrumento es el más reservado?
 
+db.reservas_instrumentos.aggregate([
+    {$group:{_id:"$tipo_instrumento",reservas:{$sum:1}}},
+    {$sort:{reservas:-1}},
+    {$limit:1}
+])
+
 //Mostrar el historial de cursos de un estudiante (fecha, sede, curso, profesor, nivel, costo).
 
+db.inscripciones.aggregate([
+    {$lookup:{from:"estudiantes",localField:"estudianteId",foreignField:"_id",as:"Estudiante"}},
+    {$match:{"Estudiante.nombre_completo":"Andresito Leal"}}])
+
 //Listar los cursos actualmente en ejecución en cada sede.
+
+
 
 //Detectar cursos que excedieron el cupo permitido en algún momento.

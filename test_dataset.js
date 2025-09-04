@@ -30,256 +30,208 @@ db.sedes.insertMany ([
 
 db.cursos.insertMany([
 
-  //SEDE BOGOTÁ
-
+  // SEDE BOGOTÁ
   {
+    _id: ObjectId("68b91598c3eb79a67e677b33"),
     nombre_curso: 'Introducción a Violín',
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"), 
-    profesorId: ObjectId("68b82480e306a5d40bba92e3"),//juan marinio
+    profesorId: ObjectId("68b82480e306a5d40bba92e3"),
     instrumento: "Violín",
     nivel: "principiante",
     semanas_duracion: 12,
-    programa: {
-      dia_semana: "Martes",
-      hora_inicio: "18:00",
-      hora_fin: "20:00"
-    },
+    programa: { dia_semana: "Martes", hora_inicio: "18:00", hora_fin: "20:00" },
     precio: 60000,
     capacidad: 12,
     cupos_disponibles: 12
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b34"),
     nombre_curso: 'Guitarra Intermedia',
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e3"),//juan marinio
+    profesorId: ObjectId("68b82480e306a5d40bba92e3"),
     instrumento: "Guitarra",
     nivel: "intermedio",
     semanas_duracion: 16,
-    programa: {
-      dia_semana: "Jueves",
-      hora_inicio: "16:00",
-      hora_fin: "18:00"
-    },
+    programa: { dia_semana: "Jueves", hora_inicio: "16:00", hora_fin: "18:00" },
     precio: 70000,
     capacidad: 15,
     cupos_disponibles: 15
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b35"),
     nombre_curso: 'Piano Avanzado',
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e4"),//laura castan
+    profesorId: ObjectId("68b82480e306a5d40bba92e4"),
     instrumento: "Piano",
     nivel: "avanzado",
     semanas_duracion: 20,
-    programa: {
-      dia_semana: "Sábado",
-      hora_inicio: "10:00",
-      hora_fin: "12:00"
-    },
+    programa: { dia_semana: "Sábado", hora_inicio: "10:00", hora_fin: "12:00" },
     precio: 80000,
     capacidad: 10,
     cupos_disponibles: 10
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b36"),
     nombre_curso: 'Flauta Principiante',
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e4"),//laura castan
+    profesorId: ObjectId("68b82480e306a5d40bba92e4"),
     instrumento: "Flauta",
     nivel: "principiante",
     semanas_duracion: 10,
-    programa: {
-      dia_semana: "Lunes",
-      hora_inicio: "17:00",
-      hora_fin: "19:00"
-    },
+    programa: { dia_semana: "Lunes", hora_inicio: "17:00", hora_fin: "19:00" },
     precio: 50000,
     capacidad: 20,
     cupos_disponibles: 20
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b37"),
     nombre_curso: 'Clarinete intermedio',
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b82480e306a5d40bba92e5"),//carlos herre
+    profesorId: ObjectId("68b82480e306a5d40bba92e5"),
     instrumento: "Clarinete",
     nivel: "intermedio",
     semanas_duracion: 14,
-    programa: {
-      dia_semana: "Miércoles",
-      hora_inicio: "19:00",
-      hora_fin: "21:00"
-    },
+    programa: { dia_semana: "Miércoles", hora_inicio: "19:00", hora_fin: "21:00" },
     precio: 65000,
     capacidad: 12,
     cupos_disponibles: 12
   },
 
-  //SEDE CALI 
-
+  // SEDE CALI
   {
+    _id: ObjectId("68b91598c3eb79a67e677b38"),
     nombre_curso: 'Trombón principiante',
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"), 
-    profesorId: ObjectId("68b82480e306a5d40bba92e6"),//mariana lope
+    profesorId: ObjectId("68b82480e306a5d40bba92e6"),
     instrumento: "Trombón",
     nivel: "principiante",
     semanas_duracion: 12,
-    programa: {
-      dia_semana: "Miércoles",
-      hora_inicio: "18:00",
-      hora_fin: "20:00"
-    },
+    programa: { dia_semana: "Miércoles", hora_inicio: "18:00", hora_fin: "20:00" },
     precio: 50000,
     capacidad: 10,
     cupos_disponibles: 10
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b39"),
     nombre_curso: 'Trompeta Intermedio',
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e7"),//santiago per
+    profesorId: ObjectId("68b82480e306a5d40bba92e7"),
     instrumento: "Trompeta",
     nivel: "intermedio",
     semanas_duracion: 16,
-    programa: {
-      dia_semana: "Jueves",
-      hora_inicio: "16:00",
-      hora_fin: "18:00"
-    },
+    programa: { dia_semana: "Jueves", hora_inicio: "16:00", hora_fin: "18:00" },
     precio: 85000,
     capacidad: 15,
     cupos_disponibles: 15
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b3a"),
     nombre_curso: 'Saxofón Avanzado',
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e7"),//santiago per
+    profesorId: ObjectId("68b82480e306a5d40bba92e7"),
     instrumento: "Saxofón",
     nivel: "avanzado",
     semanas_duracion: 20,
-    programa: {
-      dia_semana: "Sábado",
-      hora_inicio: "10:00",
-      hora_fin: "12:00"
-    },
+    programa: { dia_semana: "Sábado", hora_inicio: "10:00", hora_fin: "12:00" },
     precio: 80000,
     capacidad: 10,
     cupos_disponibles: 10
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b3b"),
     nombre_curso: 'Batería Principiante',
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92e8"),//camila dua
+    profesorId: ObjectId("68b82480e306a5d40bba92e8"),
     instrumento: "Batería",
     nivel: "principiante",
     semanas_duracion: 10,
-    programa: {
-      dia_semana: "Lunes",
-      hora_inicio: "17:00",
-      hora_fin: "19:00"
-    },
+    programa: { dia_semana: "Lunes", hora_inicio: "17:00", hora_fin: "19:00" },
     precio: 55000,
     capacidad: 20,
     cupos_disponibles: 20
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b3c"),
     nombre_curso: 'Xilófono intermedio',
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    profesorId: ObjectId("68b82480e306a5d40bba92e8"),//camila duar
+    profesorId: ObjectId("68b82480e306a5d40bba92e8"),
     instrumento: "Xilófono",
     nivel: "intermedio",
     semanas_duracion: 14,
-    programa: {
-      dia_semana: "Miércoles",
-      hora_inicio: "19:00",
-      hora_fin: "21:00"
-    },
+    programa: { dia_semana: "Miércoles", hora_inicio: "19:00", hora_fin: "21:00" },
     precio: 65000,
     capacidad: 12,
     cupos_disponibles: 12
   },
 
-  //SEDE MEDELLIN
-
+  // SEDE MEDELLÍN
   {
+    _id: ObjectId("68b91598c3eb79a67e677b3d"),
     nombre_curso: 'Contrabajo principiante',
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"), 
-    profesorId: ObjectId("68b82480e306a5d40bba92e9"),//andres molin
+    profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     instrumento: "Contrabajo",
     nivel: "principiante",
     semanas_duracion: 12,
-    programa: {
-      dia_semana: "Miércoles",
-      hora_inicio: "18:00",
-      hora_fin: "20:00"
-    },
+    programa: { dia_semana: "Miércoles", hora_inicio: "18:00", hora_fin: "20:00" },
     precio: 40000,
     capacidad: 10,
     cupos_disponibles: 10
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b3e"),
     nombre_curso: 'Arpa Intermedio',
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92ea"),//valen gomez
+    profesorId: ObjectId("68b82480e306a5d40bba92ea"),
     instrumento: "Arpa",
     nivel: "intermedio",
     semanas_duracion: 16,
-    programa: {
-      dia_semana: "Lunes",
-      hora_inicio: "16:00",
-      hora_fin: "18:00"
-    },
+    programa: { dia_semana: "Lunes", hora_inicio: "16:00", hora_fin: "18:00" },
     precio: 85000,
     capacidad: 15,
     cupos_disponibles: 15
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b3f"),
     nombre_curso: 'Órgano Avanzado',
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92eb"),//ricardo torr
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     instrumento: "Órgano",
     nivel: "avanzado",
     semanas_duracion: 20,
-    programa: {
-      dia_semana: "Sábado",
-      hora_inicio: "10:00",
-      hora_fin: "12:00"
-    },
+    programa: { dia_semana: "Sábado", hora_inicio: "10:00", hora_fin: "12:00" },
     precio: 80000,
     capacidad: 10,
     cupos_disponibles: 10
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b40"),
     nombre_curso: 'Oboe Principiante',
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),  
-    profesorId: ObjectId("68b82480e306a5d40bba92ec"),//diana moral
+    profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     instrumento: "Oboe",
     nivel: "principiante",
     semanas_duracion: 10,
-    programa: {
-      dia_semana: "Lunes",
-      hora_inicio: "17:00",
-      hora_fin: "19:00"
-    },
+    programa: { dia_semana: "Lunes", hora_inicio: "17:00", hora_fin: "19:00" },
     precio: 55000,
     capacidad: 20,
     cupos_disponibles: 20
   },
   {
+    _id: ObjectId("68b91598c3eb79a67e677b41"),
     nombre_curso: 'Bajo Eléctrico',
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b82480e306a5d40bba92ec"),//diana moral
+    profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     instrumento: "Bajo Eléctrico",
     nivel: "intermedio",
     semanas_duracion: 14,
-    programa: {
-      dia_semana: "Miércoles",
-      hora_inicio: "19:00",
-      hora_fin: "21:00"
-    },
+    programa: { dia_semana: "Miércoles", hora_inicio: "19:00", hora_fin: "21:00" },
     precio: 65000,
     capacidad: 12,
     cupos_disponibles: 12
-  },
+  }
 
-]);
+])
 
 
 //profesores
@@ -624,7 +576,7 @@ db.instrumentos.insertMany([
 db.inscripciones.insertMany([
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931a"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4ef"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b33"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b82480e306a5d40bba92e3"),
     estado: "activo",
@@ -633,7 +585,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931a"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f1"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b34"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b82480e306a5d40bba92e4"),
     estado: "cancelado",
@@ -642,7 +594,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931b"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f3"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b35"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b82480e306a5d40bba92e5"),
     estado: "activo",
@@ -651,7 +603,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931b"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f4"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b36"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b82480e306a5d40bba92e6"),
     estado: "completado",
@@ -660,7 +612,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931c"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f5"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b37"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b82480e306a5d40bba92e7"),
     estado: "activo",
@@ -669,7 +621,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931c"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4ef"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b33"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b82480e306a5d40bba92e3"),
     estado: "activo",
@@ -678,7 +630,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931d"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f1"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b34"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b82480e306a5d40bba92e4"),
     estado: "cancelado",
@@ -687,7 +639,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931d"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f4"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b36"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b82480e306a5d40bba92e6"),
     estado: "activo",
@@ -696,7 +648,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931e"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f5"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b37"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b82480e306a5d40bba92e7"),
     estado: "completado",
@@ -705,16 +657,16 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931e"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f3"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b35"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b82480e306a5d40bba92e5"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-09T08:50:00Z"),
     costo: 60000
-  },
+  }  ,
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931f"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f6"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b38"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e8"),
     estado: "activo",
@@ -723,7 +675,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba931f"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f8"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b39"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "cancelado",
@@ -732,7 +684,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9320"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fa"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3a"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "activo",
@@ -741,7 +693,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9320"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f0"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b34"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "activo",
@@ -750,7 +702,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9321"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fb"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3b"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "completado",
@@ -759,7 +711,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9321"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f6"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b38"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e8"),
     estado: "activo",
@@ -768,7 +720,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9322"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f8"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b39"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "activo",
@@ -777,7 +729,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9322"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fa"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3a"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "cancelado",
@@ -786,7 +738,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9323"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fb"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3b"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "activo",
@@ -795,16 +747,16 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9323"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f0"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b34"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-11T09:50:00Z"),
     costo: 65000
-  },
+  }  ,
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9324"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fc"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3c"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "activo",
@@ -813,7 +765,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9324"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fd"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3d"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "completado",
@@ -822,7 +774,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9326"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4ff"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3e"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "activo",
@@ -831,7 +783,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9326"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec500"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3f"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "cancelado",
@@ -840,7 +792,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9324"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fc"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3c"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "activo",
@@ -848,8 +800,8 @@ db.inscripciones.insertMany([
     costo: 55000
   },
   {
-    estudianteId: ObjectId("68b83530e306a5d40bba9326"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fd"),
+    estudianteId: ObjectId("68b83530e306a5d40bba9325"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3d"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "completado",
@@ -857,8 +809,8 @@ db.inscripciones.insertMany([
     costo: 80000
   },
   {
-    estudianteId: ObjectId("68b83530e306a5d40bba9328"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec501"),
+    estudianteId: ObjectId("68b83530e306a5d40bba9325"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b40"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "cancelado",
@@ -866,8 +818,8 @@ db.inscripciones.insertMany([
     costo: 75000
   },
   {
-    estudianteId: ObjectId("68b83530e306a5d40bba9327"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4ff"),
+    estudianteId: ObjectId("68b83530e306a5d40bba9326"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3e"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "activo",
@@ -875,8 +827,8 @@ db.inscripciones.insertMany([
     costo: 65000
   },
   {
-    estudianteId: ObjectId("68b83530e306a5d40bba932d"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec500"),
+    estudianteId: ObjectId("68b83530e306a5d40bba9326"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3f"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "activo",
@@ -885,7 +837,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b83530e306a5d40bba9326"),
-    cursoId: ObjectId("68b8f81a4b9a709ef2eec4ff"),
+    cursoId: ObjectId("68b91598c3eb79a67e677b3e"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "activo",
@@ -896,12 +848,11 @@ db.inscripciones.insertMany([
 
 
 
-
 db.reservas_instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     tipo_instrumento: "piano",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73011"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931a"), 
     inicio_reserva: ISODate("2025-09-12T15:00:00-05:00"),
     fin_reserva: ISODate("2025-09-12T16:00:00-05:00"),
     estado: "reservado",
@@ -910,7 +861,7 @@ db.reservas_instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     tipo_instrumento: "guitarra",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73013"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931b"), 
     inicio_reserva: ISODate("2025-09-13T10:00:00-05:00"),
     fin_reserva: ISODate("2025-09-13T11:30:00-05:00"),
     estado: "finalizado",
@@ -919,7 +870,7 @@ db.reservas_instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     tipo_instrumento: "saxofon",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301b"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931c"), 
     inicio_reserva: ISODate("2025-09-14T14:00:00-05:00"),
     fin_reserva: ISODate("2025-09-14T15:00:00-05:00"),
     estado: "reservado",
@@ -928,14 +879,14 @@ db.reservas_instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     tipo_instrumento: "trompeta",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301d"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931d"), 
     inicio_reserva: ISODate("2025-09-15T09:30:00-05:00"),
     fin_reserva: ISODate("2025-09-15T10:30:00-05:00"),
     estado: "cancelado",
     creado_en: new Date()
   },
   {
-    sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
+    sedeId: ObjectId("68b83530e306a5d40bba931a"),
     tipo_instrumento: "violin",
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301f"), 
     inicio_reserva: ISODate("2025-09-16T16:00:00-05:00"),
@@ -944,7 +895,7 @@ db.reservas_instrumentos.insertMany([
     creado_en: new Date()
   },
   {
-    sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
+    sedeId: ObjectId("68b83530e306a5d40bba931a"),
     tipo_instrumento: "oboe",
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73025"), 
     inicio_reserva: ISODate("2025-09-17T11:00:00-05:00"),
@@ -953,7 +904,7 @@ db.reservas_instrumentos.insertMany([
     creado_en: new Date()
   },
   {
-    sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
+    sedeId: ObjectId("68b83530e306a5d40bba931e"),
     tipo_instrumento: "fagot",
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), 
     inicio_reserva: ISODate("2025-09-18T13:00:00-05:00"),
@@ -962,7 +913,7 @@ db.reservas_instrumentos.insertMany([
     creado_en: new Date()
   },
   {
-    sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
+    sedeId: ObjectId("68b83530e306a5d40bba931b"),
     tipo_instrumento: "arpa",
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73029"), 
     inicio_reserva: ISODate("2025-09-19T15:30:00-05:00"),
@@ -971,7 +922,7 @@ db.reservas_instrumentos.insertMany([
     creado_en: new Date()
   },
   {
-    sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
+    sedeId: ObjectId("68b83530e306a5d40bba931e"),
     tipo_instrumento: "teclado",
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302b"), 
     inicio_reserva: ISODate("2025-09-20T08:00:00-05:00"),
@@ -980,7 +931,7 @@ db.reservas_instrumentos.insertMany([
     creado_en: new Date()
   },
   {
-    sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
+    sedeId: ObjectId("68b83530e306a5d40bba9321"),
     tipo_instrumento: "bajo eléctrico",
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302d"), 
     inicio_reserva: ISODate("2025-09-21T17:00:00-05:00"),
