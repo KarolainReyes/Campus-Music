@@ -623,102 +623,98 @@ db.instrumentos.insertMany([
 
 db.inscripciones.insertMany([
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73011"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73012"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931a"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4ef"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e3"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e3"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-01T10:00:00Z"),
     costo: 50000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73011"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73014"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931a"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f1"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e4"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e4"),
     estado: "cancelado",
     fecha_inscripcion: ISODate("2025-09-05T15:20:00Z"),
     costo: 80000
   },
-
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73013"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73016"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931b"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f3"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e5"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e5"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-02T09:30:00Z"),
     costo: 60000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73013"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73018"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931b"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f4"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e6"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e6"),
     estado: "completado",
     fecha_inscripcion: ISODate("2025-09-06T11:45:00Z"),
     costo: 70000
   },
-
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73015"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301a"),
+    estudianteId: ObjectId("68b83530e306a5d40bba931c"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f5"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e7"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e7"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-03T16:10:00Z"),
     costo: 75000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73015"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73012"),
+    estudianteId: ObjectId("68b83530e306a5d40bba931c"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4ef"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e3"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e3"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-07T14:00:00Z"),
     costo: 50000
   },
-
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73017"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73014"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931d"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f1"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e4"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e4"),
     estado: "cancelado",
     fecha_inscripcion: ISODate("2025-09-04T12:30:00Z"),
     costo: 80000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73017"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73018"),
+    estudianteId: ObjectId("68b83530e306a5d40bba931d"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f4"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e6"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e6"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-08T09:10:00Z"),
     costo: 70000
   },
-
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73019"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301a"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931e"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f5"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e7"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e7"),
     estado: "completado",
     fecha_inscripcion: ISODate("2025-09-05T18:40:00Z"),
     costo: 75000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73019"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73016"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931e"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f3"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e5"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e5"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-09T08:50:00Z"),
     costo: 60000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301b"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301c"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931f"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f6"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e8"),
     estado: "activo",
@@ -726,18 +722,17 @@ db.inscripciones.insertMany([
     costo: 55000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301b"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301e"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba931f"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f8"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e9"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "cancelado",
     fecha_inscripcion: ISODate("2025-09-07T17:40:00Z"),
     costo: 70000
   },
-
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301d"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73020"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba9320"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fa"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "activo",
@@ -745,18 +740,17 @@ db.inscripciones.insertMany([
     costo: 60000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301d"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73022"),
+    estudianteId: ObjectId("68b83530e306a5d40bba9320"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f0"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-08T09:30:00Z"),
     costo: 65000
   },
-
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301f"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73024"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba9321"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fb"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "completado",
@@ -764,37 +758,35 @@ db.inscripciones.insertMany([
     costo: 70000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301f"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301c"),
+    estudianteId: ObjectId("68b83530e306a5d40bba9321"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f6"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e8"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-09T11:20:00Z"),
     costo: 55000
   },
-
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73021"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301e"),
+    estudianteId: ObjectId("68b83530e306a5d40bba9322"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f8"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    profesorId: ObjectId("68b8241ae306a5d40bba92e9"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-04T09:35:00Z"),
     costo: 70000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73021"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73020"),
+    estudianteId: ObjectId("68b83530e306a5d40bba9322"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fa"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "cancelado",
     fecha_inscripcion: ISODate("2025-09-10T10:10:00Z"),
     costo: 60000
   },
-
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73023"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73024"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba9323"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fb"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "activo",
@@ -802,8 +794,8 @@ db.inscripciones.insertMany([
     costo: 70000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73023"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73022"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba9323"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4f0"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "activo",
@@ -811,8 +803,8 @@ db.inscripciones.insertMany([
     costo: 65000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73025"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73026"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba9324"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fc"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "activo",
@@ -820,18 +812,17 @@ db.inscripciones.insertMany([
     costo: 55000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73025"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73028"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba9324"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fd"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "completado",
     fecha_inscripcion: ISODate("2025-09-07T14:10:00Z"),
     costo: 80000
   },
-
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302c"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba9326"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4ff"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "activo",
@@ -839,8 +830,8 @@ db.inscripciones.insertMany([
     costo: 65000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302e"), 
+    estudianteId: ObjectId("68b83530e306a5d40bba9326"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec500"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "cancelado",
@@ -848,60 +839,60 @@ db.inscripciones.insertMany([
     costo: 60000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73025"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73026"),     
+    estudianteId: ObjectId("68b83530e306a5d40bba9324"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fc"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b82480e306a5d40bba92eb"),   
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-05T09:00:00Z"),
     costo: 55000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73028"),     
+    estudianteId: ObjectId("68b83530e306a5d40bba9326"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4fd"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b82480e306a5d40bba92eb"),   
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "completado",
     fecha_inscripcion: ISODate("2025-09-06T14:30:00Z"),
     costo: 80000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73029"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302a"),     
+    estudianteId: ObjectId("68b83530e306a5d40bba9328"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec501"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b82480e306a5d40bba92eb"),  
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "cancelado",
     fecha_inscripcion: ISODate("2025-09-07T16:10:00Z"),
     costo: 75000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302b"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302c"),     
+    estudianteId: ObjectId("68b83530e306a5d40bba9327"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4ff"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b82480e306a5d40bba92eb"),   
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-08T18:45:00Z"),
     costo: 65000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302d"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302e"),    
+    estudianteId: ObjectId("68b83530e306a5d40bba932d"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec500"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b82480e306a5d40bba92eb"),    
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-09T11:15:00Z"),
     costo: 60000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), 
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302c"),    
+    estudianteId: ObjectId("68b83530e306a5d40bba9326"),
+    cursoId: ObjectId("68b8f81a4b9a709ef2eec4ff"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-10T10:40:00Z"),
     costo: 65000
   }
-]);
+])
 
 
 
