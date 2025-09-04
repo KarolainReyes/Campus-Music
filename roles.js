@@ -37,7 +37,7 @@ db.createRole({
       actions: ["find", "insert", "update"]
     },
     {
-      resource: { db: "campus_music", collection: "reservasInstrumentos" },
+      resource: { db: "campus_music", collection: "reservas_instrumentos" },
       actions: ["find", "insert", "update"]
     }
   ],
@@ -62,7 +62,7 @@ db.createRole({
       actions: ["find", "insert"]
     },
     {
-      resource: { db: "campus_music", collection: "reservasInstrumentos" },
+      resource: { db: "campus_music", collection: "reservas_instrumentos" },
       actions: ["find", "insert"]
     }
   ],

@@ -916,7 +916,7 @@ db.inscripciones.insertMany([
 
 //Reserva Instrumentos
 
-db.reservasInstrumentos.insertMany([
+db.reservas_instrumentos.insertMany([
   // Bogotá – Conversatorio
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),

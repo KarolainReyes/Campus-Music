@@ -57,8 +57,8 @@ db.createCollection("estudiantes", {
 
 
 // Índices
-db.students.createIndex({ documento: 1 }, { unique: true })
-db.students.createIndex({ nombre_completo: 1 })
+db.estudiantes.createIndex({ documento: 1 }, { unique: true })
+db.estudiantes.createIndex({ nombre_completo: 1 })
 
 
 //Coleccion profesores
@@ -115,8 +115,8 @@ db.createCollection("profesores", {
 
 
 // Índices
-db.teachers.createIndex({ documento: 1 }, { unique: true })
-db.teachers.createIndex({ especialidad: 1 })
+db.profesores.createIndex({ documento: 1 }, { unique: true })
+db.profesores.createIndex({ especialidad: 1 })
 
 
 //Coleccion usuarios
@@ -148,7 +148,7 @@ db.createCollection("usuarios", {
         },
         perfilId: {
           bsonType: "objectId",
-          description: "Referencia al documento en estudiante/teachers/employees"
+          description: "Referencia al documento en estudiante/profesores/employees"
         },
         ultimo_Login: {
           bsonType: "date",
@@ -435,7 +435,7 @@ db.instrumentos.createIndex(
 
 // coleccion reservas_instrumentos
 
-db.createCollection("reservasInstrumentos", {
+db.createCollection("reservas_instrumentos", {
   validator: {
     $jsonSchema: {
       bsonType: "object",
