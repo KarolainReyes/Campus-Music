@@ -3,6 +3,8 @@
 
 //¿Cuántos estudiantes se inscribieron por sede en el último mes?
 
+
+
 //¿Cuáles son los cursos más demandados en cada sede?
 
 //¿Cuál es el ingreso total generado por inscripciones en cada sede?

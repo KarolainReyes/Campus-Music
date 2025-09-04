@@ -31,7 +31,7 @@ db.createCollection("estudiantes", {
             },
             telefono: {
               bsonType: "string",
-              pattern: "^\\+57[0-9]{10}$",
+              pattern: "^\\+57",
               description: "Número de teléfono colombiano en formato +57XXXXXXXXXX"
             }
           },
@@ -376,7 +376,7 @@ db.createCollection("inscripciones", {
 
 
 // indices 
-db.inscripciones.createIndex({ estudianteId: 1, cursoId: 1 }, { unique: true })
+db.inscripciones.createIndex({ estudianteId: 1, cursoId: 1 })
 db.inscripciones.createIndex({ estado: 1 })
 
 //coleccion instrumentos

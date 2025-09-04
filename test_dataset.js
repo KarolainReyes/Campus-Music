@@ -622,12 +622,9 @@ db.instrumentos.insertMany([
 //inscripciones
 
 db.inscripciones.insertMany([
-  // ============================
-  // Bogotá – Conversatorio (sedeId: 68b8241ae306a5d40bba92e0)
-  // ============================
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73011"), // Andresito Leal
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73012"), // Violín básico
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73011"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73012"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e3"),
     estado: "activo",
@@ -636,7 +633,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73011"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73014"), // Piano avanzado
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73014"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e4"),
     estado: "cancelado",
@@ -645,8 +642,8 @@ db.inscripciones.insertMany([
   },
 
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73013"), // Laura Medina
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73016"), // Flauta básica
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73013"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73016"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e5"),
     estado: "activo",
@@ -655,7 +652,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73013"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73018"), // Guitarra intermedia
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73018"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e6"),
     estado: "completado",
@@ -664,8 +661,8 @@ db.inscripciones.insertMany([
   },
 
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73015"), // Carlos Rojas
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301a"), // Batería intensiva
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73015"),
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301a"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e7"),
     estado: "activo",
@@ -674,7 +671,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73015"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73012"), // Violín básico
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73012"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e3"),
     estado: "activo",
@@ -683,8 +680,8 @@ db.inscripciones.insertMany([
   },
 
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73017"), // Mariana Torres
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73014"), // Piano avanzado
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73017"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73014"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e4"),
     estado: "cancelado",
@@ -693,7 +690,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73017"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73018"), // Guitarra intermedia
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73018"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e6"),
     estado: "activo",
@@ -702,8 +699,8 @@ db.inscripciones.insertMany([
   },
 
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73019"), // Felipe Gómez
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301a"), // Batería intensiva
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73019"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301a"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e7"),
     estado: "completado",
@@ -712,20 +709,16 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73019"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73016"), // Flauta básica
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73016"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e5"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-09T08:50:00Z"),
     costo: 60000
   },
-
-  // ============================
-  // Cali – En Cali es donde más se goza (sedeId: 68b8241ae306a5d40bba92e1)
-  // ============================
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301b"), // Camila Vargas
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301c"), // Trompeta básica
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301b"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301c"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e8"),
     estado: "activo",
@@ -734,7 +727,7 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301b"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301e"), // Saxofón intermedio
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301e"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e9"),
     estado: "cancelado",
@@ -743,36 +736,36 @@ db.inscripciones.insertMany([
   },
 
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301d"), // Santiago Pardo
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73020"), // Trombón principiante
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301d"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73020"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa0"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-02T15:55:00Z"),
     costo: 60000
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301d"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73022"), // Clarinete intermedio
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73022"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa1"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-08T09:30:00Z"),
     costo: 65000
   },
 
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301f"), // Valentina Ruiz
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73024"), // Contrabajo principiante
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301f"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73024"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa2"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "completado",
     fecha_inscripcion: ISODate("2025-09-03T17:45:00Z"),
     costo: 70000
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301f"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301c"), // Trompeta básica
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301c"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e8"),
     estado: "activo",
@@ -781,8 +774,8 @@ db.inscripciones.insertMany([
   },
 
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73021"), // Ricardo Silva
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301e"), // Saxofón intermedio
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73021"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7301e"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     profesorId: ObjectId("68b8241ae306a5d40bba92e9"),
     estado: "activo",
@@ -791,137 +784,133 @@ db.inscripciones.insertMany([
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73021"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73020"), // Trombón principiante
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73020"),
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa0"),
+    profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "cancelado",
     fecha_inscripcion: ISODate("2025-09-10T10:10:00Z"),
     costo: 60000
   },
 
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73023"), // Diana López
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73024"), // Contrabajo principiante
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73023"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73024"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa2"),
+    profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-05T08:25:00Z"),
     costo: 70000
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73023"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73022"), // Clarinete intermedio
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73022"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa1"),
+    profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-11T09:50:00Z"),
     costo: 65000
   },
-
-  // ============================
-  // Bogotá – Academia Musical Paisana (sedeId: 68b8241ae306a5d40bba92e2)
-  // ============================
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73025"), // Mateo Hernández
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73026"), // Oboe principiante
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73025"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73026"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa3"),
+    profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-01T12:15:00Z"),
     costo: 55000
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73025"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73028"), // Fagot avanzado
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73028"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa4"),
+    profesorId: ObjectId("68b82480e306a5d40bba92ec"),
     estado: "completado",
     fecha_inscripcion: ISODate("2025-09-07T14:10:00Z"),
     costo: 80000
   },
 
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), // Isabella Castro
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302c"), // Teclado intermedio
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302c"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa6"),
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-02T11:45:00Z"),
     costo: 65000
   },
   {
     estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"),
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302e"), // Arpa básica
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302e"), 
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa7"),
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),
     estado: "cancelado",
     fecha_inscripcion: ISODate("2025-09-08T13:30:00Z"),
     costo: 60000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73025"), // Mateo Hernández
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73026"),     // Oboe Principiante
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73025"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73026"),     
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa3"),    // profesor Oboe
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),   
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-05T09:00:00Z"),
     costo: 55000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), // Isabella Castro
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc73028"),     // Fagot Avanzado
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc73028"),     
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa4"),    // profesor Fagot
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),   
     estado: "completado",
     fecha_inscripcion: ISODate("2025-09-06T14:30:00Z"),
     costo: 80000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73029"), // David Romero
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302a"),     // Bajo Eléctrico
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73029"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302a"),     
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa5"),    // profesor Bajo
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),  
     estado: "cancelado",
     fecha_inscripcion: ISODate("2025-09-07T16:10:00Z"),
     costo: 75000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302b"), // Juliana Cárdenas
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302c"),     // Teclado Intermedio
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302b"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302c"),     
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa6"),    // profesor Teclado
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),   
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-08T18:45:00Z"),
     costo: 65000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302d"), // Nicolás Fernández
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302e"),     // Arpa Básica
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302d"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302e"),    
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa7"),    // profesor Arpa
+    profesorId: ObjectId("68b82480e306a5d40bba92eb"),    
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-09T11:15:00Z"),
     costo: 60000
   },
   {
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), // Isabella Castro (segunda inscripción)
-    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302c"),     // Teclado Intermedio
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), 
+    cursoId: ObjectId("68b8d4085a3e1e5f7bc7302c"),    
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
-    profesorId: ObjectId("68b8241ae306a5d40bbaa6"),
+    profesorId: ObjectId("68b82480e306a5d40bba92e9"),
     estado: "activo",
     fecha_inscripcion: ISODate("2025-09-10T10:40:00Z"),
     costo: 65000
   }
 ]);
 
-//Reserva Instrumentos
+
+
 
 db.reservas_instrumentos.insertMany([
-  // Bogotá – Conversatorio
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     tipo_instrumento: "piano",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73011"), // Andresito Leal
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73011"), 
     inicio_reserva: ISODate("2025-09-12T15:00:00-05:00"),
     fin_reserva: ISODate("2025-09-12T16:00:00-05:00"),
     estado: "reservado",
@@ -930,18 +919,16 @@ db.reservas_instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e0"),
     tipo_instrumento: "guitarra",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73013"), // Laura Medina
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73013"), 
     inicio_reserva: ISODate("2025-09-13T10:00:00-05:00"),
     fin_reserva: ISODate("2025-09-13T11:30:00-05:00"),
     estado: "finalizado",
     creado_en: new Date()
   },
-
-  // Cali
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     tipo_instrumento: "saxofon",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301b"), // Camila Vargas
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301b"), 
     inicio_reserva: ISODate("2025-09-14T14:00:00-05:00"),
     fin_reserva: ISODate("2025-09-14T15:00:00-05:00"),
     estado: "reservado",
@@ -950,7 +937,7 @@ db.reservas_instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     tipo_instrumento: "trompeta",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301d"), // Santiago Pardo
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301d"), 
     inicio_reserva: ISODate("2025-09-15T09:30:00-05:00"),
     fin_reserva: ISODate("2025-09-15T10:30:00-05:00"),
     estado: "cancelado",
@@ -959,18 +946,16 @@ db.reservas_instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e1"),
     tipo_instrumento: "violin",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301f"), // Valentina Ruiz
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7301f"), 
     inicio_reserva: ISODate("2025-09-16T16:00:00-05:00"),
     fin_reserva: ISODate("2025-09-16T17:30:00-05:00"),
     estado: "reservado",
     creado_en: new Date()
   },
-
-  // Bogotá – Paisana
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     tipo_instrumento: "oboe",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73025"), // Mateo Hernández
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73025"), 
     inicio_reserva: ISODate("2025-09-17T11:00:00-05:00"),
     fin_reserva: ISODate("2025-09-17T12:00:00-05:00"),
     estado: "reservado",
@@ -979,7 +964,7 @@ db.reservas_instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     tipo_instrumento: "fagot",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), // Isabella Castro
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73027"), 
     inicio_reserva: ISODate("2025-09-18T13:00:00-05:00"),
     fin_reserva: ISODate("2025-09-18T14:30:00-05:00"),
     estado: "finalizado",
@@ -988,7 +973,7 @@ db.reservas_instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     tipo_instrumento: "arpa",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73029"), // David Romero
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc73029"), 
     inicio_reserva: ISODate("2025-09-19T15:30:00-05:00"),
     fin_reserva: ISODate("2025-09-19T17:00:00-05:00"),
     estado: "cancelado",
@@ -997,7 +982,7 @@ db.reservas_instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     tipo_instrumento: "teclado",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302b"), // Juliana Cárdenas
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302b"), 
     inicio_reserva: ISODate("2025-09-20T08:00:00-05:00"),
     fin_reserva: ISODate("2025-09-20T09:30:00-05:00"),
     estado: "reservado",
@@ -1006,10 +991,10 @@ db.reservas_instrumentos.insertMany([
   {
     sedeId: ObjectId("68b8241ae306a5d40bba92e2"),
     tipo_instrumento: "bajo eléctrico",
-    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302d"), // Nicolás Fernández
+    estudianteId: ObjectId("68b8d4085a3e1e5f7bc7302d"), 
     inicio_reserva: ISODate("2025-09-21T17:00:00-05:00"),
     fin_reserva: ISODate("2025-09-21T18:00:00-05:00"),
-    estado: "activo",
+    estado: "reservado",
     creado_en: new Date()
   }
 ]);
