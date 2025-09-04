@@ -30,8 +30,8 @@
 
 {
 
-  "sedeId": ObjectId("..."),
-  "profesorId": ObjectId("..."),
+   sedeId: ObjectId("..."),
+  profesorId: ObjectId("..."),
   "instrumento": "piano",            // indice
   "nivel": "principiante",
   "semanas_duracion": 12,
@@ -48,18 +48,20 @@
 //coleccion inscripciones
 
 {
-  "estudianteId": ObjectId("..."),
-  "cursoId": ObjectId("..."),
-  "sedeId": ObjectId("..."),      // denormalizado
-  "profesorId": ObjectId("..."),     // denormalizado
-  "estado": "activo"                // [activo|cancelado|completado]
+  estudianteId: ObjectId("..."),
+  cursoId: ObjectId("..."),
+   sedeId: ObjectId("..."),      // denormalizado
+  profesorId: ObjectId("..."),     // denormalizado
+  estado: "activo",  // [activo|cancelado|completado]
+  fecha_inscripcion: new Date
 },
+
 
 //coleccion instrumentos
 
 {
-  "sedeId": ObjectId("..."),
-  "tipo_instrumento": "piano",                  // indice compuesto (campusId,type)
+   sedeId: ObjectId("..."),
+  tipo_instrumento: "piano",                  // indice compuesto (campusId,type)
   "total": 8,
   "disponibles": 8                   
 },
@@ -67,12 +69,12 @@
 // colecion reservas instrumentos
 
 {
-  "sedeId": ObjectId("..."),
-  "tipo_instrumento": "piano",
-  "estudianteId": ObjectId("..."),
-  "inicio_reserva": ISODate("2025-09-05T15:00:00-05:00"),
+   sedeId: ObjectId("..."),
+  tipo_instrumento: "piano",
+  estudianteId: ObjectId("..."),
+  inicio_reserva: ISODate("2025-09-05T15:00:00-05:00"),
   "fin_reserva": ISODate("2025-09-05T16:00:00-05:00"),
-  "estado": "reservado"              // [reservado|cancelado|finalizado]
+  estado: "reservado"              // [reservado|cancelado|finalizado]
 },
 
 // coleccion usuarios (profesores, estudiantes, admin)
