@@ -266,3 +266,26 @@ db.inscripciones.aggregate([
     }
   }
 ])
+
+
+//Reporte de ingresos mensuales por cursos
+
+//pipelineIngresosMensualesPorCurso y ejemplo de ejecución
+
+db.cursos.aggregate([
+  {$lookup :{
+    from: 'inscripciones',
+    localField: 'nombre_curso',
+    foreignField: 'curso',
+    as: 'info_curso'
+  }},
+  {$project: {_id:0, 'info_curso.curso': 1, 'info_curso.sede': 1, 'info_curso.fecha_inscripcion': 1, 'info_curso.costo': 1}}
+])
+
+db.inscripciones.aggregate([
+  {$group: {
+    _id: { nombre: '$curso', sede: '$sede', mes: '$fecha_inscripcion', costo: {$avg: '$costo'}}
+  }}
+])
+
+
